@@ -13,8 +13,8 @@ pipeline{
         }
         stage('3-s3'){
             steps{
-                sh 'df -h'
-                sh 'touch file1'
+                sh 'pwd'
+                sh 'du -h'
             }
         }
     }
