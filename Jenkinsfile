@@ -17,5 +17,19 @@ pipeline{
                 sh 'du -h'
             }
         }
+        stage(''){
+            parallel{
+        		stage('p1'){
+        			steps{
+        				echo "first parallel-stage"
+        			}
+        		}
+        		stage('p2'){
+        			steps{
+        				echo "second parallel-stage"
+        			}
+        		}
+        	}
+        }
     }
 }
