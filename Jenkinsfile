@@ -12,7 +12,7 @@ pipeline{
                 sh 'logname'
             }
         }
-        stage(3-s3){
+        stage('3-s3'){
             steps{
                 sh 'df -h'
                 sh 'touch file1'
