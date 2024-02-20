@@ -8,8 +8,7 @@ pipeline{
         }
         stage('2-s2'){
             steps{
-                sh 'lscpu'
-                sh 'logname'
+                echo "this is a prototype"
             }
         }
         stage('3-s3'){
